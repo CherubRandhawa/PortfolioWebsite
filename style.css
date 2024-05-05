@@ -1,0 +1,41 @@
+.bgimage {
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    position: relative 
+}
+
+.hero_title {
+    font-size: 4rem;
+}
+
+.hero_desc {
+    font-size: 1.5rem
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.hero-text,
+.hero-text span {
+    transition: color 0.3s ease;
+}
+
+.hero-text p:hover,
+.hero-text span:hover {
+    color: red;
+}
+
+.hero-text h2:hover,
+.hero-text span:hover {
+    color: purple;
+}
+
+.imageAboutPage {
+    width: 100%;
+}
