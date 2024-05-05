@@ -1,6 +1,12 @@
+#nav {
+    background-color: black;
+}
+#navfont {
+    color: whitesmoke;
+}
 .bgimage {
     height: 100vh;
-    background-color: black;
+    background-color: rgb(194, 159, 159);
     background-size: cover;
     position: relative 
 }
@@ -28,7 +34,7 @@
 
 .hero-text p:hover,
 .hero-text span:hover {
-    color: red;
+    color: rgb(128, 15, 15);
 }
 
 .hero-text h2:hover,
@@ -38,4 +44,28 @@
 
 .imageAboutPage {
     width: 100%;
+}
+
+#iconclass{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px;
+    margin-bottom: 20px;
+}
+
+#icon{
+    font-size: 120px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Initial and final position */
+    }
+    50% {
+        transform: translateY(-10px); /* Bounce upward */
+    }
+}
+
+#iconclass i:hover {
+    animation: bounce 0.5s ease infinite;
 }
