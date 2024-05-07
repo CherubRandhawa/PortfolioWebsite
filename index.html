@@ -48,7 +48,7 @@
 
     <section id = "about">
         <div class = "container mt-4 pt-4">
-            <h1 class = "text-center">About</h1>
+            <h1 class = "text-center" id="sectionheading">About</h1>
             <div class = "row mt-4">
                 <div class ="col-lg-12">
                     <p> I'm Cherub Singh Randhawa, a Software Engineer with a Master's Degree in Computer Engineering and industry experience as a Software Test Engineer.
@@ -63,7 +63,7 @@
 
     <section id = "skills">
         <div class = "container mt-4 pt-4">
-            <h1 class = "text-center">Skills</h1>
+            <h1 class = "text-center" id = "sectionheading">Skills</h1>
             <div class = "row mt-4">
                 <div class = "col-lg-12" id = "iconclass">
                     <i id = "icon" class="devicon-python-plain-wordmark colored"></i>
@@ -85,8 +85,88 @@
         </div>
     </section>
 
-    <section>
-        
+    <section id = "projects">
+        <div class = "container mt-4">
+            <h1 class = "text-center" id="sectionheading">Projects</h1>
+            <div class = "row">
+                <div class = "col-lg-3 mt-4">
+                    <a href = "https://github.com/CherubRandhawa/wcTool" class = "card-link" target = "_blank">
+                        <div class = "card" id = "project-card">
+                            <div class = "card-front">
+                                <img class = "card-img-top" src = "Images/wctool.JPG" alt="Card image" style="width:100%">
+                                <div class = "card-body">
+                                <div class = "text-center">
+                                    <p id = "project-desc">wctool</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class = "card-back">
+                                <p id = "project-desc">A Python-based clone of the Unix wc command line tool running 4+ commands, adhering to Unix philosophy
+                                                       principles, showcasing proficiency in Python and command line interface (CLI) development.</p>
+                            </div>
+                        </div> 
+                    </a>
+                </div>
+
+                <div class = "col-lg-3 mt-4">
+                    <a href = "https://github.com/CherubRandhawa/VirusTotal-Project" class = "card-link" target = "_blank">
+                        <div class = "card" id = "project-card">
+                            <div class = "card-front">
+                                <img class = "card-img-top" src = "Images/VirusTotal.JPG" alt="Card image" style="width:100%">
+                                <div class = "card-body">
+                                <div class = "text-center">
+                                    <p id = "project-desc">VirusTotal File Scanning</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class = "card-back">
+                                <p id = "project-desc">A python that interacts with the VirusTotal API to scan files, 
+                                                        stores results in MongoDB, and sends email notifications for large file scans and do database checks to avoid redundant scans withing 24 hours.
+                                                        It emphasizes clean code practices and real-world application.</p>
+                            </div>
+                        </div> 
+                    </a>
+                </div>
+
+                <div class = "col-lg-3 mt-4">
+                    <a href = "https://github.com/CherubRandhawa/SeleniumE2EAutomation" class = "card-link" target = "_blank">
+                        <div class = "card" id = "project-card">
+                            <div class = "card-front">
+                                <img class = "card-img-top" src = "Images/Selenium.jpg" alt="Card image" style="width:100%">
+                                <div class = "card-body">
+                                <div class = "text-center">
+                                    <p id = "project-desc"> Selenium Automation</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class = "card-back">
+                                <p id = "project-desc">Conducted end-to-end testing for an E-commerce website using Python and Selenium.
+                                                        Automated browser actions such as adding items to the cart and navigating through product categories.
+                                                        Technologies: Python, Selenium, VS Code, Git.</p>
+                            </div>
+                        </div> 
+                    </a>
+                </div>
+
+                <div class = "col-lg-3 mt-4">
+                    <a href = "https://github.com/CherubRandhawa/SeleniumE2EAutomation" class = "card-link" target = "_blank">
+                        <div class = "card" id = "project-card">
+                            <div class = "card-front">
+                                <img class = "card-img-top" src = "Images/netflix.JPG" alt="Card image" style="width:100%">
+                                <div class = "card-body">
+                                <div class = "text-center">
+                                    <p id = "project-desc">Netflix Clone</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class = "card-back">
+                                <p id = "project-desc">Crafted a visually engaging and responsive website inspired by Netflix’s user experience.</p>
+                            </div>
+                        </div> 
+                    </a>
+                </div>
+                </div>
+            </div>
     </section>
     <script src="script/script.js"></script>
 </body>

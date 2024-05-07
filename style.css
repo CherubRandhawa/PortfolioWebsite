@@ -1,3 +1,6 @@
+#sectionheading {
+    font-size: 36px;
+}
 #nav {
     background-color: black;
 }
@@ -46,6 +49,31 @@
     width: 100%;
 }
 
+#about p {
+    position: relative; /* Positioning context for the overlay */
+    z-index: 1; /* Ensure text is above overlay layer */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* CSS for overlay layer */
+#about p::after {
+    content: ''; /* Create a pseudo-element for the overlay */
+    position: absolute; /* Position the overlay */
+    top: 0; /* Position at the top of the paragraph */
+    left: 0; /* Position at the left of the paragraph */
+    width: 100%; /* Cover the entire width of the paragraph */
+    height: 100%; /* Cover the entire height of the paragraph */
+    background-color: rgba(237, 255, 72, 0.5); /* Semi-transparent white overlay */
+    z-index: -1; /* Place the overlay behind the text */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+}
+
+/* CSS for hover effect on overlay */
+#about p:hover::after {
+    opacity: 1; /* Show overlay on hover */
+}
+
 #iconclass{
     display: flex;
     flex-wrap: wrap;
@@ -68,4 +96,45 @@
 
 #iconclass i:hover {
     animation: bounce 0.5s ease infinite;
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.card,
+.card-front,
+.card-back {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.card-back{
+    transform: rotateY(180deg)
+}
+
+.card:hover .card-front {
+    transform: rotateY(180deg);
+    transition: transform 1s;
+}
+
+.card:hover .card-back {
+    transform: rotateY(0);
+}
+
+#project-desc{
+    font-size: 16px;
+    color: black;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
 }
