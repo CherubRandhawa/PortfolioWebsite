@@ -18,10 +18,12 @@ section {
 
 .hero_title {
     font-size: 4rem;
+    position: relative;
 }
 
 .hero_desc {
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    position: relative;
 }
 
 .hero-text {
@@ -162,6 +164,19 @@ section {
 
 #contact {
     background-color: whitesmoke; /* Light background color */
+    padding: 40px 0;
+}
+
+#contactdetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+#contactdetails:hover {
+    transform: scale(1.1); /* Scale up on hover */
 }
 
 #contactdetails i {
@@ -182,10 +197,7 @@ section {
     text-decoration: none;
 }
 
-.contact-item:hover {
-    transform: scale(1.1); /* Scale up on hover */
+.navbar-brand {
+    padding: 2rem;
 }
 
-.contact-item:hover a {
-    color: #007bff; /* Change link color on hover */
-}
