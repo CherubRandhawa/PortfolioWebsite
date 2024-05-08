@@ -201,3 +201,10 @@ section {
     padding: 2rem;
 }
 
+/* spacing on all sections */
+#about, #skills, #projects, #contact {
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
